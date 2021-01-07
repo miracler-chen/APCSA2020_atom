@@ -39,6 +39,7 @@ public class Shop{
         double itemPrice;
         int quantity;
         double totalPrice = 0;
+        int totalQuan = 0;
 
         Scanner scan = new Scanner(System.in);
 
@@ -55,6 +56,7 @@ public class Shop{
             System.out.println("Enter the quantity: ");
             quantity = scan.nextInt();
             totalPrice += itemPrice * quantity;
+            totalQuan += quantity;
 
             // *** create a new item and add it to the cart
             item = new Item(itemName, itemPrice, quantity);
@@ -70,7 +72,8 @@ public class Shop{
 
         }
         while (keepShopping.equals("y"));
-
+        System.out.println();
+        System.out.println();
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("Shopping List");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~");
@@ -82,5 +85,7 @@ public class Shop{
         System.out.println();
         System.out.println("You need to pay: " + "$" + totalPrice);
         System.out.println("------------------------------------------");
+        System.out.println();
+        System.out.println();
     }
 }
