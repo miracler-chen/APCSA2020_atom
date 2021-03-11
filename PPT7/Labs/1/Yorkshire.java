@@ -3,7 +3,7 @@
 //
 // A class derived from Dog that holds information about
 // a Yorkshire terrier. Overrides Dog speak method.
-//          
+//
 // ****************************************************************
 
 public class Yorkshire extends Dog
@@ -11,7 +11,7 @@ public class Yorkshire extends Dog
 
     public Yorkshire(String name)
     {
-	super(name);
+        super(name);
     }
 
     // ------------------------------------------------------------
@@ -19,7 +19,7 @@ public class Yorkshire extends Dog
     // ------------------------------------------------------------
     public String speak()
     {
-	return "woof";
+        return "woof";
     }
 
 }
