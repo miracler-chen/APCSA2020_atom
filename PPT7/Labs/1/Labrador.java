@@ -4,7 +4,7 @@
 // A class derived from Dog that holds information about
 // a labrador retriever.  Overrides Dog speak method and includes
 // information about avg weight for this breed.
-//          
+//
 // ****************************************************************
 
 public class Labrador extends Dog
@@ -14,7 +14,8 @@ public class Labrador extends Dog
 
     public Labrador(String name,  String color)
     {
-	this.color = color;
+        super(name);
+        this.color = color;
     }
 
     // ------------------------------------------------------------
@@ -22,7 +23,7 @@ public class Labrador extends Dog
     // ------------------------------------------------------------
     public String speak()
     {
-	return "WOOF";
+        return "WOOF";
     }
 
     // ------------------------------------------------------------
@@ -30,6 +31,6 @@ public class Labrador extends Dog
     // ------------------------------------------------------------
     public static int avgBreedWeight()
     {
-	return breedWeight;
+        return breedWeight;
     }
 }
